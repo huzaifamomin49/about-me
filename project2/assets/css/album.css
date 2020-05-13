@@ -1,0 +1,199 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+ svg {
+            font: 5.5em 'Montserrat';
+            width: 100%;
+            height: 210px;
+            text-align:center;
+        }
+        
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+        
+        .text-copy:nth-child(2) {
+            stroke: #4285F4;
+            animation-delay: -2s;
+        }
+        
+        .text-copy:nth-child(3) {
+            stroke: #34A853;
+            animation-delay: -3s;
+        }
+        
+        .text-copy:nth-child(4) {
+            stroke: #FBBC05;
+            animation-delay: -4s;
+        }
+        
+        .text-copy:nth-child(5) {
+            stroke: #EA4335;
+            animation-delay: -5s;
+        }
+        
+        @keyframes stroke-offset {
+            100% {
+                stroke-dashoffset: -35%;
+            }
+        }
+    
+    
+        .form-group{
+            color:white;
+        }
+        #form_container
+        {
+            padding:15px 15px;
+            margin-top:15px;
+            background: rgba(0,0,0,0.5);
+            color:#fff;
+        }
+        body
+        {
+            background-color: #000;
+            background-size: cover;
+            background-repeat:no-repeat;
+
+        }
+        .upload-btn-wrapper
+        {
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+        }
+
+        .upload-btn-wrapper input[type=file]
+        {
+          font-size: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+    
+      body {
+        margin: 0;
+      }
+      .scene {
+        height: 100vh;
+        overflow: hidden;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 200;
+
+      }
+      .scene.one{
+        background-image: url('../../images/photo/section1.jpg');
+
+      }
+      .scene.two{
+          background-image: url('../../images/photo/heic1501a.jpg');
+      }
+      .scene.three{
+        background-image: url('../../images/photo/section3-1.gif');
+      }
+      .scene header{
+        color:white;
+        max-width: 80%;
+        position: relative;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        font-size:1.5rem;
+        text-align: center;
+      }
+      .scene header h1{
+        font-size:2rem;
+        margin-bottom: 1rem;
+        font-weight: 300;
+      }
+      .scene header h1:after{
+        content:'';
+        border-bottom:1px solid white;
+        width:8rem;
+        display: block;
+        margin:0 auto;
+        margin-top:1rem;
+      }
+
+      .row {
+        color: black;
+        font-weight: bold;
+
+      }
+     
+     .container-fluid{
+    font-size: 25px;
+}
+nav{
+  padding-bottom: 15px;
+}
+ 
+.info{
+    font-weight:900;
+    font-size:25px;
+}
